@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Products & Pricing – Marks Gate International</title>
+<meta name="description" content="Browse examination papers, workbooks, holiday packages and more from Marks Gate International Uganda."/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{green:{50:'#f0faf0',100:'#dcf5dc',200:'#b9ebb9',300:'#88d988',400:'#4dbe4d',500:'#1e9e1e',600:'#187a18',700:'#145c14',800:'#0f450f',900:'#0a2e0a'},orange:{50:'#fff7ed',100:'#ffedd5',200:'#fed7aa',300:'#fdba74',400:'#fb923c',500:'#f97316',600:'#ea6c0a',700:'#c2570a',800:'#9a4508',900:'#7c3a07'}},fontFamily:{display:['Playfair Display','serif'],body:['DM Sans','sans-serif']}}}}
+</script>
+<style>
+  *{font-family:'DM Sans',sans-serif} h1,h2,h3,.display{font-family:'Playfair Display',serif}
+  :root{--green:#1e9e1e;--orange:#f97316}
+  html{scroll-behavior:smooth} body{overflow-x:hidden}
+  #navbar{background:white;box-shadow:0 2px 20px rgba(0,0,0,0.08)}
+  .card-hover{transition:transform 0.3s ease,box-shadow 0.3s ease} .card-hover:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,0.12)}
+  .pricing-card{transition:all 0.3s ease} .pricing-card:hover{transform:translateY(-8px)} .pricing-card.featured{border:2px solid var(--orange)}
+  .section-tag{display:inline-block;background:linear-gradient(135deg,rgba(30,158,30,0.1),rgba(249,115,22,0.1));color:var(--green);font-weight:600;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;padding:6px 16px;border-radius:20px;border:1px solid rgba(30,158,30,0.2);margin-bottom:12px}
+  .gradient-text{background:linear-gradient(135deg,#187a18,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .green-btn{background:linear-gradient(135deg,#187a18,#1e9e1e);color:white;padding:12px 28px;border-radius:8px;font-weight:600;transition:all 0.3s ease;display:inline-block;cursor:pointer;text-align:center}
+  .green-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(30,158,30,0.3)}
+  .orange-btn{background:linear-gradient(135deg,#ea6c0a,#f97316);color:white;padding:12px 28px;border-radius:8px;font-weight:600;transition:all 0.3s ease;display:inline-block;cursor:pointer;text-align:center}
+  .orange-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(249,115,22,0.3)}
+  .tab-btn{transition:all 0.3s ease;cursor:pointer} .tab-btn.active{background:var(--green);color:white}
+  .tab-content{display:none} .tab-content.active{display:block}
+  .page-hero{background:linear-gradient(135deg,#0f450f,#187a18,#1e9e1e);padding:120px 0 80px}
+  #whatsapp-btn:hover{transform:scale(1.1)}
+</style>
+</head>
+<body class="bg-white">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 py-4">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:linear-gradient(135deg,#f97316,#ea6c0a)"><span class="text-white font-bold text-lg" style="font-family:'Playfair Display',serif">M</span></div>
+        <div><div class="font-bold text-green-900 text-sm leading-tight" style="font-family:'Playfair Display',serif">Marks Gate</div><div class="text-green-700 text-xs">International</div></div>
+      </a>
+      <div class="hidden md:flex items-center gap-1">
+        <a href="index.html" class="text-green-800 font-medium px-4 py-2 rounded-lg hover:bg-green-50 transition text-sm">Home</a>
+        <a href="about.html" class="text-green-800 font-medium px-4 py-2 rounded-lg hover:bg-green-50 transition text-sm">About</a>
+        <a href="products.html" class="text-green-700 font-bold px-4 py-2 rounded-lg bg-green-50 text-sm">Products</a>
+        <a href="services.html" class="text-green-800 font-medium px-4 py-2 rounded-lg hover:bg-green-50 transition text-sm">Services</a>
+        <a href="contact.html" class="text-white font-semibold px-5 py-2 rounded-lg transition text-sm ml-2" style="background:var(--orange)">Contact Us</a>
+      </div>
+      <button id="menu-toggle" class="md:hidden text-green-800 p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-4 bg-white rounded-2xl shadow-2xl p-4">
+      <a href="index.html" class="block px-4 py-3 text-gray-700 font-medium rounded-xl hover:bg-green-50 transition">Home</a>
+      <a href="about.html" class="block px-4 py-3 text-gray-700 font-medium rounded-xl hover:bg-green-50 transition">About Us</a>
+      <a href="products.html" class="block px-4 py-3 text-green-700 font-bold rounded-xl bg-green-50">Products & Pricing</a>
+      <a href="services.html" class="block px-4 py-3 text-gray-700 font-medium rounded-xl hover:bg-green-50 transition">Services</a>
+      <a href="contact.html" class="block mt-2 text-center px-4 py-3 text-white font-semibold rounded-xl" style="background:var(--orange)">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-flex items-center gap-2 bg-white bg-opacity-15 border border-white border-opacity-25 text-white rounded-full px-4 py-2 text-sm font-medium mb-6">📚 Our Products</div>
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4" style="font-family:'Playfair Display',serif">Products &amp; <span style="color:#fb923c">Pricing</span></h1>
+    <p class="text-green-100 text-lg max-w-2xl mx-auto mb-4">Quality, curriculum-aligned materials for every stage of learning. Available for schools, parents, and institutions.</p>
+    <div class="inline-flex items-center gap-2 bg-orange-500 text-white rounded-full px-5 py-2 text-sm font-semibold">🤝 School prices are negotiable — contact us for bulk discounts</div>
+    <div class="flex justify-center gap-3 mt-6 text-sm text-white">
+      <a href="index.html" class="opacity-70 hover:opacity-100">Home</a>
+      <span class="opacity-40">/</span>
+      <span class="font-semibold">Products & Pricing</span>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS SECTION -->
+<section class="py-24" style="background:linear-gradient(180deg,#f9fafb,#f0faf0)">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Tabs -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <button class="tab-btn active px-6 py-2.5 rounded-full border border-green-200 text-sm font-semibold text-white" onclick="switchTab('examinations',this)">📝 Examinations</button>
+      <button class="tab-btn px-6 py-2.5 rounded-full border border-green-200 text-sm font-semibold text-green-700 bg-white" onclick="switchTab('packages',this)">📦 Holiday Packages</button>
+      <button class="tab-btn px-6 py-2.5 rounded-full border border-green-200 text-sm font-semibold text-green-700 bg-white" onclick="switchTab('books',this)">📗 Workbooks</button>
+    </div>
+
+    <!-- Examinations -->
+    <div id="tab-examinations" class="tab-content active">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800 mb-3" style="font-family:'Playfair Display',serif">Examination <span class="gradient-text">Papers</span></h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Mid-term and end-of-term examinations for all levels from Nursery through Primary 7. All papers are curriculum-aligned and professionally printed.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-10">
+        <div class="pricing-card bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center">
+          <div class="w-12 h-12 rounded-2xl mx-auto mb-4 flex items-center justify-center text-2xl" style="background:#dcf5dc">🌱</div>
+          <h4 class="font-bold text-gray-800 mb-1">Nursery Exams</h4>
+          <p class="text-gray-400 text-sm mb-4">Baby Class, Middle Class & Top Class</p>
+          <div class="border-t border-gray-100 pt-4 space-y-2 mb-5">
+            <div class="flex justify-between text-sm"><span class="text-gray-500">Mid-term</span><span class="font-semibold text-green-700">Contact Us</span></div>
+            <div class="flex justify-between text-sm"><span class="text-gray-500">End-of-term</span><span class="font-semibold text-green-700">Contact Us</span></div>
+          </div>
+          <a href="contact.html" class="block green-btn text-sm py-2.5">Enquire Now</a>
+        </div>
+        <div class="pricing-card bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center">
+          <div class="w-12 h-12 rounded-2xl mx-auto mb-4 flex items-center justify-center text-2xl" style="background:#dcf5dc">📖</div>
+          <h4 class="font-bold text-gray-800 mb-1">Primary 1 Exams</h4>
+          <p class="text-gray-400 text-sm mb-4">All subjects, curriculum-aligned</p>
+          <div class="border-t border-gray-100 pt-4 space-y-2 mb-5">
+            <div class="flex justify-between text-sm"><span class="text-gray-500">Mid-term</span><span class="font-semibold text-green-700">Contact Us</span></div>
+            <div class="flex justify-between text-sm"><span class="text-gray-500">End-of-term</span><span class="font-semibold text-green-700">Contact Us</span></div>
+          </div>
+          <a href="contact.html" class="block green-btn text-sm py-2.5">Enquire Now</a>
+        </div>
+        <div class="pricing-card featured bg-white rounded-2xl shadow-md p-6 text-center relative">
+          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2"><span class="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">POPULAR</span></div>
+          <div class="w-12 h-12 rounded-2xl mx-auto mb-4 flex items-center justify-center text-2xl" style="background:#ffedd5">⭐</div>
+          <h4 class="font-bold text-gray-800 mb-1">P.2 – P.4 Exams</h4>
+          <p class="text-gray-400 text-sm mb-4">All subjects, full coverage</p>
+          <div class="border-t border-gray-100 pt-4 space-y-2 mb-5">
+            <div class="flex justify-between text-sm"><span class="text-gray-500">Mid-term</span><span class="font-semibold text-orange-600">Contact Us</span></div>
+            <div class="flex justify-between text-sm"><span class="text-gray-500">End-of-term</span><span class="font-semibold text-orange-600">Contact Us</span></div>
+          </div>
+          <a href="contact.html" class="block orange-btn text-sm py-2.5">Enquire Now</a>
+        </div>
+        <div class="pricing-card bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center">
+          <div class="w-12 h-12 rounded-2xl mx-auto mb-4 flex items-center justify-center text-2xl" style="background:#dcf5dc">🏆</div>
+          <h4 class="font-bold text-gray-800 mb-1">P.5 – P.7 Exams</h4>
+          <p class="text-gray-400 text-sm mb-4">Advanced level primary subjects</p>
+          <div class="border-t border-gray-100 pt-4 space-y-2 mb-5">
+            <div class="flex justify-between text-sm"><span class="text-gray-500">Mid-term</span><span class="font-semibold text-green-700">Contact Us</span></div>
+            <div class="flex justify-between text-sm"><span class="text-gray-500">End-of-term</span><span class="font-semibold text-green-700">Contact Us</span></div>
+          </div>
+          <a href="contact.html" class="block green-btn text-sm py-2.5">Enquire Now</a>
+        </div>
+      </div>
+      <!-- Delivery note -->
+      <div class="rounded-2xl p-6 flex items-center gap-4" style="background:linear-gradient(135deg,#f0faf0,#dcf5dc);border:1.5px dashed #1e9e1e">
+        <span class="text-3xl">🚚</span>
+        <div>
+          <div class="font-bold text-green-800">Delivery Available</div>
+          <div class="text-green-700 text-sm">Delivery to your place of convenience at a cost. We serve Kampala, upcountry Uganda, and East Africa.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Holiday Packages -->
+    <div id="tab-packages" class="tab-content">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800 mb-3" style="font-family:'Playfair Display',serif">Holiday <span class="gradient-text">Packages</span></h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Keep learners engaged during school holidays with structured, age-appropriate packages for all levels.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="pricing-card bg-white rounded-2xl shadow-md p-8 border border-gray-100">
+          <div class="w-14 h-14 rounded-2xl mb-5 flex items-center justify-center text-3xl" style="background:#dcf5dc">🗓️</div>
+          <h4 class="font-bold text-gray-800 text-xl mb-2">Normal Holiday Package</h4>
+          <p class="text-gray-500 text-sm mb-6">Standard holiday assignments and exercises for Nursery – P.7 covering all key subjects.</p>
+          <ul class="text-sm text-gray-600 space-y-2 mb-6">
+            <li class="flex items-center gap-2"><span class="text-green-600">✓</span> English Activities</li>
+            <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Mathematics Drills</li>
+            <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Science Exercises</li>
+            <li class="flex items-center gap-2"><span class="text-green-600">✓</span> Social Studies</li>
+          </ul>
+          <a href="contact.html" class="block green-btn text-sm py-3 text-center">Get Quote</a>
+        </div>
+        <div class="pricing-card featured bg-white rounded-2xl shadow-md p-8 relative">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2"><span class="bg-orange-500 text-white text-xs font-bold px-4 py-1.5 rounded-full">BEST VALUE</span></div>
+          <div class="w-14 h-14 rounded-2xl mb-5 flex items-center justify-center text-3xl" style="background:#ffedd5">🎨</div>
+          <h4 class="font-bold text-gray-800 text-xl mb-2">Customised Holiday Package</h4>
+          <p class="text-gray-500 text-sm mb-6">Tailored specifically to your school's curriculum, brand, and student needs.</p>
+          <ul class="text-sm text-gray-600 space-y-2 mb-6">
+            <li class="flex items-center gap-2"><span class="text-orange-500">✓</span> School Branding on Cover</li>
+            <li class="flex items-center gap-2"><span class="text-orange-500">✓</span> Custom Subject Mix</li>
+            <li class="flex items-center gap-2"><span class="text-orange-500">✓</span> Adjustable Difficulty Levels</li>
+            <li class="flex items-center gap-2"><span class="text-orange-500">✓</span> Marking Schemes Included</li>
+          </ul>
+          <a href="contact.html" class="block orange-btn text-sm py-3 text-center">Get Custom Quote</a>
+        </div>
+        <div class="rounded-2xl p-8 flex flex-col justify-center" style="background:linear-gradient(135deg,#0f450f,#1e9e1e)">
+          <div class="text-white text-4xl mb-4">🤝</div>
+          <h4 class="text-white font-bold text-xl mb-3">Bulk & School Pricing</h4>
+          <p class="text-green-100 text-sm leading-relaxed mb-5">Flexible, negotiable pricing for schools ordering in bulk. Call or message us to discuss your needs.</p>
+          <a href="tel:0772511120" class="bg-white text-green-800 font-semibold text-sm py-3 px-5 rounded-xl text-center hover:bg-green-50 transition">📞 Call 0772 511120</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Workbooks -->
+    <div id="tab-books" class="tab-content">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800 mb-3" style="font-family:'Playfair Display',serif">Workbooks &amp; <span class="gradient-text">Handwriting Books</span></h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Comprehensive, activity-rich books for learners at every level. Curriculum-aligned and beautifully designed.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div class="pricing-card bg-white rounded-2xl shadow-md p-6 border border-gray-100">
+          <div class="w-12 h-12 rounded-2xl mb-4 flex items-center justify-center text-2xl" style="background:#dcf5dc">📗</div>
+          <h4 class="font-bold text-gray-800 mb-2">Learners' Workbooks</h4>
+          <p class="text-gray-500 text-sm mb-4">Comprehensive, activity-rich workbooks covering all core subjects for primary school learners.</p>
+          <div class="space-y-1 text-sm text-gray-600 mb-5">
+            <div class="flex items-center gap-2"><span class="text-green-600">✓</span> English & Literacy</div>
+            <div class="flex items-center gap-2"><span class="text-green-600">✓</span> Mathematics & Numeracy</div>
+            <div class="flex items-center gap-2"><span class="text-green-600">✓</span> Science & Technology</div>
+          </div>
+          <a href="contact.html" class="block green-btn text-sm py-2.5 text-center">Order Now</a>
+        </div>
+        <div class="pricing-card bg-white rounded-2xl shadow-md p-6 border border-gray-100">
+          <div class="w-12 h-12 rounded-2xl mb-4 flex items-center justify-center text-2xl" style="background:#ffedd5">✍️</div>
+          <h4 class="font-bold text-gray-800 mb-2">Handwriting Books – Infant</h4>
+          <p class="text-gray-500 text-sm mb-4">Structured handwriting practice for early primary learners (P.1 – P.3).</p>
+          <div class="space-y-1 text-sm text-gray-600 mb-5">
+            <div class="flex items-center gap-2"><span class="text-orange-500">✓</span> Letter Formation Guides</div>
+            <div class="flex items-center gap-2"><span class="text-orange-500">✓</span> Word & Sentence Practice</div>
+            <div class="flex items-center gap-2"><span class="text-orange-500">✓</span> Progressive Difficulty</div>
+          </div>
+          <a href="contact.html" class="block orange-btn text-sm py-2.5 text-center">Order Now</a>
+        </div>
+        <div class="pricing-card bg-white rounded-2xl shadow-md p-6 border border-gray-100">
+          <div class="w-12 h-12 rounded-2xl mb-4 flex items-center justify-center text-2xl" style="background:#dcf5dc">🌸</div>
+          <h4 class="font-bold text-gray-800 mb-2">Handwriting Books – Nursery</h4>
+          <p class="text-gray-500 text-sm mb-4">Fun, engaging handwriting books for nursery-level children (Baby – Top Class).</p>
+          <div class="space-y-1 text-sm text-gray-600 mb-5">
+            <div class="flex items-center gap-2"><span class="text-green-600">✓</span> Pre-writing Strokes</div>
+            <div class="flex items-center gap-2"><span class="text-green-600">✓</span> Alphabet & Numbers</div>
+            <div class="flex items-center gap-2"><span class="text-green-600">✓</span> Colourful, Child-friendly Design</div>
+          </div>
+          <a href="contact.html" class="block green-btn text-sm py-2.5 text-center">Order Now</a>
+        </div>
+      </div>
+      <div class="rounded-2xl p-6 flex items-center gap-4" style="background:linear-gradient(135deg,#fff7ed,#ffedd5);border:1.5px dashed #f97316">
+        <span class="text-3xl">💡</span>
+        <div>
+          <div class="font-bold text-orange-800">Custom Book Production Available</div>
+          <div class="text-orange-700 text-sm">We design and print custom books and workbooks branded with your school logo. <a href="contact.html" class="font-semibold underline">Contact us for a quote.</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY CALLOUT -->
+<div class="py-12" style="background:linear-gradient(135deg,#0f450f,#1e9e1e)">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <div class="text-4xl mb-4">🚚</div>
+    <h3 class="text-white text-2xl font-bold mb-2" style="font-family:'Playfair Display',serif">Delivery to Your Place of Convenience</h3>
+    <p class="text-green-100 mb-6">We deliver to schools and homes across Kampala, upcountry Uganda, and East Africa — at a cost.</p>
+    <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition inline-block">📞 Arrange Delivery</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer style="background:linear-gradient(135deg,#0a2e0a,#0f450f,#145c14)" class="pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:linear-gradient(135deg,#f97316,#ea6c0a)"><span class="text-white font-bold text-xl" style="font-family:'Playfair Display',serif">M</span></div>
+          <div><div class="text-white font-bold text-lg" style="font-family:'Playfair Display',serif">Marks Gate International</div><div class="text-green-300 text-sm">Your Doorway to Success</div></div>
+        </div>
+        <p class="text-green-200 text-sm leading-relaxed mb-6 max-w-sm">A registered and authorised education services provider delivering curriculum excellence across Uganda and East Africa.</p>
+        <div class="flex gap-3">
+          <a href="tel:0772511120" class="bg-green-700 hover:bg-green-600 text-white rounded-xl p-3 transition">📞</a>
+          <a href="https://wa.me/256772511120" target="_blank" class="bg-green-500 hover:bg-green-400 text-white rounded-xl p-3 transition">💬</a>
+          <a href="contact.html" class="bg-orange-600 hover:bg-orange-500 text-white rounded-xl p-3 transition">✉️</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-5 text-lg">Quick Links</h4>
+        <ul class="space-y-3">
+          <li><a href="index.html" class="text-green-300 hover:text-orange-300 text-sm transition">→ Home</a></li>
+          <li><a href="about.html" class="text-green-300 hover:text-orange-300 text-sm transition">→ About Us</a></li>
+          <li><a href="products.html" class="text-green-300 hover:text-orange-300 text-sm transition">→ Products & Pricing</a></li>
+          <li><a href="services.html" class="text-green-300 hover:text-orange-300 text-sm transition">→ Our Services</a></li>
+          <li><a href="contact.html" class="text-green-300 hover:text-orange-300 text-sm transition">→ Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-5 text-lg">Contact</h4>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3"><span class="text-orange-400">📞</span><div><div class="text-green-200 text-xs">Phone / WhatsApp</div><a href="tel:0772511120" class="text-white font-semibold">0772 511120</a></div></div>
+          <div class="flex items-start gap-3"><span class="text-orange-400">📍</span><div><div class="text-green-200 text-xs">Address</div><div class="text-white text-sm">Jomayi Estate – Nalumunye, Off Entebbe Road</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-green-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="text-green-300 text-sm">© 2024 <span class="text-white font-medium">Marks Gate International</span>. All rights reserved.</div>
+      <div class="text-green-400 text-xs">Registered & Authorised Education Services Provider | Uganda</div>
+    </div>
+  </div>
+</footer>
+
+<a id="whatsapp-btn" href="https://wa.me/256772511120" target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 text-white rounded-full shadow-2xl px-5 py-3.5 font-semibold text-sm" style="background:linear-gradient(135deg,#25d366,#128c7e);transition:transform 0.3s ease">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>Chat on WhatsApp</span>
+</a>
+<script>
+document.getElementById('menu-toggle').addEventListener('click',()=>document.getElementById('mobile-menu').classList.toggle('hidden'));
+function switchTab(id,btn){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>{b.classList.remove('active');b.classList.add('bg-white');b.style.color='#145c14'});
+  document.getElementById('tab-'+id).classList.add('active');
+  btn.classList.add('active');btn.classList.remove('bg-white');btn.style.color='white';
+}
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}}),{threshold:0.1});
+document.querySelectorAll('.pricing-card').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(24px)';el.style.transition='opacity 0.5s ease,transform 0.5s ease';obs.observe(el)});
+</script>
+</body>
+</html>
